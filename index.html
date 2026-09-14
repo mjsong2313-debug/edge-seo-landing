@@ -13,9 +13,14 @@
 
 <header class="sticky top-0 z-50 border-b border-bord bg-bg/80 backdrop-blur-md">
   <div class="mx-auto max-w-6xl px-5 sm:px-8 h-16 flex items-center justify-between">
-    <a href="index.html" class="flex items-baseline gap-2 shrink-0">
-      <span class="font-display font-black text-lg tracking-tight">EDGE SEO</span>
-      <span class="font-mono text-[11px] tracking-[0.14em] text-inkfaint uppercase hidden sm:inline">Google&nbsp;News&nbsp;Engine</span>
+    <a href="index.html" class="flex items-center gap-2.5 shrink-0">
+      <span class="logo-badge">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="#fff"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+      </span>
+      <span class="flex flex-col leading-none">
+        <span class="font-display font-black text-[15px] tracking-tight">EDGE SEO</span>
+        <span class="font-mono text-[9.5px] tracking-[0.14em] text-inkfaint uppercase hidden sm:inline">Google&nbsp;News&nbsp;Engine</span>
+      </span>
     </a>
     <nav class="hidden md:flex items-center gap-8 font-mono text-[13px] tracking-wide">
       <a href="index.html" class="text-ink font-semibold" aria-current="page">홈</a>
@@ -24,7 +29,7 @@
       <a href="proof.html" class="text-inkdim hover:text-ink transition-colors">실검증</a>
       <a href="pricing.html" class="text-inkdim hover:text-ink transition-colors">요금</a>
     </nav>
-    <a href="pricing.html#cta" class="shrink-0 rounded-md bg-accent text-bg font-semibold text-[13px] px-4 py-2 hover:bg-white transition-colors">
+    <a href="pricing.html#cta" class="shrink-0 rounded-full bg-accent text-bg font-semibold text-[13px] px-4 py-2 hover:bg-white transition-colors">
       진단 시작하기
     </a>
   </div>
@@ -44,7 +49,10 @@
   <div class="relative mx-auto max-w-6xl px-5 sm:px-8 pt-16 pb-20 sm:pt-24 sm:pb-28 grid lg:grid-cols-[1.05fr_0.95fr] gap-14 items-center">
 
     <div>
-      <p class="font-mono text-[12px] tracking-[0.18em] uppercase text-accent mb-4">대한민국 최초 개발·도입 기술</p>
+      <span class="pill-dark font-mono text-[12px] tracking-[0.1em] text-inkdim mb-6">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.8"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M6 6l2 2M16 16l2 2M6 18l2-2M16 8l2-2"/></svg>
+        대한민국 최초 개발·도입 기술
+      </span>
       <h1 class="font-display font-black text-[2.35rem] leading-[1.16] sm:text-5xl sm:leading-[1.14] tracking-tight">
         원본 CMS는 그대로.<br>
         <span class="accent-text">구글 뉴스 기술 문제</span>는<br>
@@ -56,11 +64,13 @@
       </p>
 
       <div class="mt-9 flex flex-col sm:flex-row gap-3 sm:items-center">
-        <a href="pricing.html#cta" class="inline-flex justify-center items-center rounded-md bg-accent text-bg font-semibold px-6 py-3.5 hover:bg-white transition-colors">
+        <a href="pricing.html#cta" class="inline-flex justify-center items-center gap-2 rounded-full bg-accent text-bg font-semibold px-6 py-3.5 hover:bg-white transition-colors">
           지금 귀사의 사이트를 진단하십시오
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
-        <a href="proof.html" class="inline-flex justify-center items-center rounded-md border border-bordstrong px-6 py-3.5 text-inkdim hover:text-ink hover:border-inkdim transition-colors">
+        <a href="proof.html" class="inline-flex justify-center items-center gap-2 rounded-full border border-bordstrong px-6 py-3.5 text-inkdim hover:text-ink hover:border-inkdim transition-colors">
           실검증 자료 보기
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
         </a>
       </div>
 
@@ -73,34 +83,73 @@
       </div>
     </div>
 
-    <div class="relative">
-      <div class="rounded-xl border border-bordstrong bg-surface shadow-2xl shadow-black/40 overflow-hidden">
-        <div class="flex items-center gap-2 px-4 py-3 border-b border-bord bg-surface2">
-          <span class="w-2.5 h-2.5 rounded-full bg-[#5C6A8C]/50"></span>
-          <span class="w-2.5 h-2.5 rounded-full bg-[#5C6A8C]/50"></span>
-          <span class="w-2.5 h-2.5 rounded-full bg-[#5C6A8C]/50"></span>
-          <span class="ml-3 font-mono text-[12px] text-inkfaint">edge-engine · live diagnostic</span>
-        </div>
-        <div class="p-5 sm:p-6 font-mono text-[13px] sm:text-[13.5px] leading-[1.9]">
-          <p class="text-inkfaint">$ 귀사 사이트 진단 중<span class="console-cursor"></span></p>
-          <p class="check-row mt-3 flex items-center gap-2" style="animation-delay:.3s">
-            <span class="text-ok">✓</span><span class="text-inkdim">Soft-404 오판정 —</span><span class="text-ink">감지 안 됨</span>
-          </p>
-          <p class="check-row flex items-center gap-2" style="animation-delay:.6s">
-            <span class="text-ok">✓</span><span class="text-inkdim">Canonical 정합성 —</span><span class="text-ink">일치</span>
-          </p>
-          <p class="check-row flex items-center gap-2" style="animation-delay:.9s">
-            <span class="text-ok">✓</span><span class="text-inkdim">오리진 접속차단 응답 —</span><span class="text-ink">정상 코드</span>
-          </p>
-          <p class="check-row flex items-center gap-2" style="animation-delay:1.2s">
-            <span class="text-ok">✓</span><span class="text-inkdim">JSON-LD 구조화 데이터 —</span><span class="text-ink">삽입됨</span>
-          </p>
-          <p class="check-row mt-3 text-inkfaint" style="animation-delay:1.5s">
-            &gt; 귀사의 결과는 지금 확인해 보십시오.
-          </p>
-        </div>
+    <div class="relative hidden lg:block">
+      <div class="relative rounded-2xl overflow-hidden aspect-[4/3]" style="background:radial-gradient(120% 140% at 75% 15%, rgba(124,111,245,0.22), transparent 55%), radial-gradient(90% 110% at 15% 90%, rgba(34,211,238,0.14), transparent 55%), #060D1D;">
+        <svg viewBox="0 0 560 420" class="absolute inset-0 w-full h-full" fill="none">
+          <defs>
+            <linearGradient id="edgeLine" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#7C6FF5"/>
+              <stop offset="100%" stop-color="#22D3EE"/>
+            </linearGradient>
+          </defs>
+          <g stroke="url(#edgeLine)" stroke-width="1.6" stroke-linecap="round" opacity="0.75">
+            <path d="M280 210 L150 100"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="3.4s" repeatCount="indefinite"/></path>
+            <path d="M280 210 L420 70"><animate attributeName="opacity" values="0.9;0.3;0.9" dur="3.1s" repeatCount="indefinite"/></path>
+            <path d="M280 210 L440 220"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.7s" repeatCount="indefinite"/></path>
+            <path d="M280 210 L120 260"><animate attributeName="opacity" values="1;0.4;1" dur="3.8s" repeatCount="indefinite"/></path>
+            <path d="M280 210 L300 350"><animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/></path>
+            <path d="M280 210 L430 330"><animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.9s" repeatCount="indefinite"/></path>
+          </g>
+          <g>
+            <rect x="240" y="170" width="80" height="80" rx="14" fill="#0F1830" stroke="url(#edgeLine)" stroke-width="1.4"/>
+            <rect x="255" y="185" width="50" height="8" rx="3" fill="#22D3EE" opacity="0.8"/>
+            <rect x="255" y="199" width="34" height="6" rx="3" fill="#7C6FF5" opacity="0.7"/>
+            <rect x="255" y="211" width="42" height="6" rx="3" fill="#5C6A8C" opacity="0.6"/>
+            <rect x="255" y="225" width="28" height="6" rx="3" fill="#5C6A8C" opacity="0.5"/>
+          </g>
+          
+          <g transform="translate(126 82)">
+            <rect width="48" height="36" rx="8" fill="#101B36" stroke="#2A3A5C" stroke-width="1"/>
+            <circle cx="10" cy="9" r="2" fill="#22D3EE" opacity="0.9"/>
+            <rect x="7" y="17" width="34" height="4" rx="2" fill="#3B4B70"/>
+            <rect x="7" y="25" width="22" height="4" rx="2" fill="#2A3A5C"/>
+          </g>
+          <g transform="translate(396 52)">
+            <rect width="48" height="36" rx="8" fill="#101B36" stroke="#2A3A5C" stroke-width="1"/>
+            <circle cx="10" cy="9" r="2" fill="#22D3EE" opacity="0.9"/>
+            <rect x="7" y="17" width="34" height="4" rx="2" fill="#3B4B70"/>
+            <rect x="7" y="25" width="22" height="4" rx="2" fill="#2A3A5C"/>
+          </g>
+          <g transform="translate(416 202)">
+            <rect width="48" height="36" rx="8" fill="#101B36" stroke="#2A3A5C" stroke-width="1"/>
+            <circle cx="10" cy="9" r="2" fill="#22D3EE" opacity="0.9"/>
+            <rect x="7" y="17" width="34" height="4" rx="2" fill="#3B4B70"/>
+            <rect x="7" y="25" width="22" height="4" rx="2" fill="#2A3A5C"/>
+          </g>
+          <g transform="translate(96 242)">
+            <rect width="48" height="36" rx="8" fill="#101B36" stroke="#2A3A5C" stroke-width="1"/>
+            <circle cx="10" cy="9" r="2" fill="#22D3EE" opacity="0.9"/>
+            <rect x="7" y="17" width="34" height="4" rx="2" fill="#3B4B70"/>
+            <rect x="7" y="25" width="22" height="4" rx="2" fill="#2A3A5C"/>
+          </g>
+          <g transform="translate(276 332)">
+            <rect width="48" height="36" rx="8" fill="#101B36" stroke="#2A3A5C" stroke-width="1"/>
+            <circle cx="10" cy="9" r="2" fill="#22D3EE" opacity="0.9"/>
+            <rect x="7" y="17" width="34" height="4" rx="2" fill="#3B4B70"/>
+            <rect x="7" y="25" width="22" height="4" rx="2" fill="#2A3A5C"/>
+          </g>
+          <g transform="translate(406 312)">
+            <rect width="48" height="36" rx="8" fill="#101B36" stroke="#2A3A5C" stroke-width="1"/>
+            <circle cx="10" cy="9" r="2" fill="#22D3EE" opacity="0.9"/>
+            <rect x="7" y="17" width="34" height="4" rx="2" fill="#3B4B70"/>
+            <rect x="7" y="25" width="22" height="4" rx="2" fill="#2A3A5C"/>
+          </g>
+          <g fill="#22D3EE">
+            <circle cx="280" cy="210" r="4"><animate attributeName="r" values="4;6;4" dur="2.2s" repeatCount="indefinite"/></circle>
+          </g>
+        </svg>
       </div>
-      <div class="absolute -z-10 -inset-6 rounded-[2rem] bg-accent/10 blur-2xl hidden sm:block"></div>
+      <div class="absolute -z-10 -inset-6 rounded-[2rem] bg-accent/10 blur-2xl"></div>
     </div>
 
   </div>
@@ -151,7 +200,10 @@
 </nav>
 <footer class="border-t border-bord">
   <div class="mx-auto max-w-6xl px-5 sm:px-8 py-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-    <div class="flex items-baseline gap-2">
+    <div class="flex items-center gap-2.5">
+      <span class="logo-badge">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="#fff"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+      </span>
       <span class="font-display font-black text-[15px]">EDGE SEO</span>
       <span class="font-mono text-[11px] text-inkfaint uppercase tracking-wide">원본 CMS는 그대로 · 검색엔진 응답은 더 정확하게</span>
     </div>
