@@ -1552,7 +1552,7 @@
     dots.forEach(function(d, i){ d.classList.toggle('active', i === n); });
 
     // Update counter
-    var pad = n < 17 ? '0' : '';
+    var pad = n < 9 ? '0' : '';
     counterEl.textContent = pad + (n+1) + ' / ' + (TOTAL < 10 ? '0' : '') + TOTAL;
 
     // Update nav btn active state
