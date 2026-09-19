@@ -110,13 +110,12 @@
   }
   .slides-track{
     display:flex;height:100%;
-    width:1800%;
     transform:translateX(0);
     transition:transform 0.6s cubic-bezier(0.4,0,0.2,1);
     will-change:transform;
   }
   .slide{
-    width:5.5556%;height:100%;flex-shrink:0;
+    width:5.2632%;height:100%;flex-shrink:0;
   }
   .slide-inner{
     position:relative;height:100%;width:100%;
@@ -1506,6 +1505,80 @@
       </div>
     </div>
 
+    <!-- ── SLIDE 18: FINAL COMMAND (일반기업) ── -->
+    <div class="slide">
+      <div class="slide-inner">
+        <div class="slide-content" style="max-width:860px;margin:0 auto;padding:40px 24px;display:flex;flex-direction:column;justify-content:center;min-height:100%">
+          <div class="overline reveal" style="color:var(--cyan)">GENERAL BUSINESS RESPONSE INTEGRITY</div>
+          <h2 class="reveal mb-4" style="font-size:clamp(20px,3.2vw,42px);line-height:1.22;font-weight:800;max-width:640px">
+            검색 신호가 흔들린다면,<br>
+            <span style="color:var(--cyan)">오늘 응답 구조부터<br>진단하십시오.</span>
+          </h2>
+          <p class="reveal mb-8" style="font-size:clamp(13px,1.5vw,15px);color:var(--text-muted);max-width:580px;line-height:1.75">
+            페이지를 더 만들기 전에, 검색엔진이 신뢰할 수 있는 응답 구조부터 확인해야 합니다.<br>
+            Universal Edge SEO는 그 결함을 진단하고 정리하는 기술입니다.
+          </p>
+
+          <!-- 연락처 테이블 -->
+          <div class="reveal" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:24px 28px;margin-bottom:32px;max-width:560px">
+            <table style="width:100%;border-collapse:collapse;font-size:13px">
+              <tbody>
+                <tr style="border-bottom:1px solid rgba(255,255,255,0.07)">
+                  <td style="padding:9px 0;color:var(--text-muted);width:38%;font-weight:600">회사명</td>
+                  <td style="padding:9px 0;color:var(--white)">0000</td>
+                </tr>
+                <tr style="border-bottom:1px solid rgba(255,255,255,0.07)">
+                  <td style="padding:9px 0;color:var(--text-muted);font-weight:600">대표자</td>
+                  <td style="padding:9px 0;color:var(--white)">0000</td>
+                </tr>
+                <tr style="border-bottom:1px solid rgba(255,255,255,0.07)">
+                  <td style="padding:9px 0;color:var(--text-muted);font-weight:600">사업자등록번호</td>
+                  <td style="padding:9px 0;color:var(--white)">0000-0000-0000</td>
+                </tr>
+                <tr style="border-bottom:1px solid rgba(255,255,255,0.07)">
+                  <td style="padding:9px 0;color:var(--text-muted);font-weight:600">전화번호</td>
+                  <td style="padding:9px 0;color:var(--white)">0000-0000-0000</td>
+                </tr>
+                <tr style="border-bottom:1px solid rgba(255,255,255,0.07)">
+                  <td style="padding:9px 0;color:var(--text-muted);font-weight:600">이메일</td>
+                  <td style="padding:9px 0;color:var(--white)">0000@0000.com</td>
+                </tr>
+                <tr style="border-bottom:1px solid rgba(255,255,255,0.07)">
+                  <td style="padding:9px 0;color:var(--text-muted);font-weight:600">홈페이지</td>
+                  <td style="padding:9px 0;color:var(--cyan)">https://0000.com</td>
+                </tr>
+                <tr>
+                  <td style="padding:9px 0;color:var(--text-muted);font-weight:600">상담 및 운영시간</td>
+                  <td style="padding:9px 0;color:var(--white)">0000 · 0000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 펀치라인 -->
+          <div class="reveal" style="margin-bottom:28px">
+            <p style="font-size:clamp(15px,2vw,20px);font-weight:800;color:var(--white);line-height:1.4;margin-bottom:8px">
+              "남들과 같은 시스템이면, 남들과 같은 결과만 나옵니다."
+            </p>
+            <p style="font-size:13px;color:var(--text-muted)">
+              지금 당장 검색엔진 응답 구조부터 진단하십시오.
+            </p>
+          </div>
+
+          <!-- CTA -->
+          <div class="reveal" style="display:flex;gap:12px;flex-wrap:wrap">
+            <button class="btn-primary" onclick="goToSlide(8)" style="padding:14px 32px;font-size:15px">
+              진단 신청 · 10만 원
+            </button>
+            <button class="btn-outline-cyan" onclick="goToSlide(17)" style="padding:14px 24px;font-size:14px">
+              요금제 다시 보기
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
   </div><!-- /slides-track -->
 </main>
 
@@ -1514,14 +1587,14 @@
   <div class="nav-row">
     <button class="arrow-btn" id="btn-prev" onclick="prevSlide()" aria-label="이전">&#8592;</button>
     <div class="dots" id="dots"></div>
-    <span class="slide-counter" id="counter">01 / 18</span>
+    <span class="slide-counter" id="counter">01 / 19</span>
     <button class="arrow-btn" id="btn-next" onclick="nextSlide()" aria-label="다음">&#8594;</button>
   </div>
 </div>
 
 <script>
 (function(){
-  var TOTAL = 18;
+  var TOTAL = 19;
   var current = 0;
   var track = document.getElementById('track');
   var dotsEl = document.getElementById('dots');
