@@ -110,13 +110,13 @@
   }
   .slides-track{
     display:flex;height:100%;
-    width:1000%;
+    width:1200%;
     transform:translateX(0);
     transition:transform 0.6s cubic-bezier(0.4,0,0.2,1);
     will-change:transform;
   }
   .slide{
-    width:10%;height:100%;flex-shrink:0;
+    width:8.3333%;height:100%;flex-shrink:0;
   }
   .slide-inner{
     position:relative;height:100%;width:100%;
@@ -447,7 +447,7 @@
       <button class="nav-btn" onclick="goToSlide(8)">도입 비용</button>
     </nav>
     <div class="header-ctas">
-      <button class="btn-biz" onclick="goToSlide(0)">일반기업용 솔루션</button>
+      <button class="btn-biz" onclick="goToSlide(10)">일반기업용 솔루션</button>
       <button class="btn-diag" onclick="goToSlide(8)">진단 신청 · 10만 원</button>
     </div>
   </div>
@@ -494,7 +494,7 @@
             </div>
             <div class="cta-group mb-6">
               <button class="btn-primary" onclick="goToSlide(8)">내 사이트 진단 신청 · 10만 원</button>
-              <button class="btn-secondary" onclick="goToSlide(0)">일반기업용 솔루션 보기</button>
+              <button class="btn-secondary" onclick="goToSlide(10)">일반기업용 솔루션 보기</button>
               <button class="btn-outline-cyan" onclick="goToSlide(1)">실패 원인 해부하기</button>
             </div>
             <div class="status-bar">
@@ -1125,6 +1125,146 @@
       </div>
     </div>
 
+    <!-- ── SLIDE 10: 일반기업 실제 결함 사례 4선 ── -->
+    <div class="slide">
+      <div class="slide-inner">
+        <div class="slide-content" style="max-width:960px;margin:0 auto;padding:40px 24px">
+          <div class="overline reveal">REAL CASE STUDIES</div>
+          <h2 class="reveal mb-2" style="font-size:clamp(22px,3.5vw,38px);line-height:1.2">실제 결함 사례 4선</h2>
+          <p class="reveal mb-8" style="color:var(--text-muted);font-size:14px">일반기업·병원·이커머스에서 실제로 발생한 검색 결함 — 대응 비용과 함께</p>
+          <div class="grid-2 reveal" style="gap:16px;margin-bottom:32px">
+
+            <!-- Card 1 -->
+            <div class="issue-card" style="background:rgba(255,80,80,0.04);border:1px solid rgba(255,80,80,0.18);border-radius:12px;padding:24px">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+                <span style="font-size:22px">🏥</span>
+                <span style="font-size:11px;font-weight:700;letter-spacing:0.12em;color:rgba(255,80,80,0.9);text-transform:uppercase">성형외과·병의원</span>
+              </div>
+              <h4 style="font-size:15px;font-weight:700;margin-bottom:8px;color:var(--white)">의료진 퇴사로 URL 삭제했는데<br>서버가 200 OK 반환</h4>
+              <p style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-bottom:12px">진료 페이지가 삭제됐지만 서버가 여전히 200 OK를 반환 → Soft-404 수백 건 누적, 신규 진료 페이지가 검색에서 차단됨.</p>
+              <div style="background:rgba(255,80,80,0.08);border-radius:8px;padding:10px 14px;font-size:12px;color:rgba(255,255,255,0.7)">
+                💸 개발사 "전면 재개발" 견적 <strong style="color:rgba(255,100,100,0.95)">700만 원</strong> 청구
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="issue-card" style="background:rgba(255,80,80,0.04);border:1px solid rgba(255,80,80,0.18);border-radius:12px;padding:24px">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+                <span style="font-size:22px">🏭</span>
+                <span style="font-size:11px;font-weight:700;letter-spacing:0.12em;color:rgba(255,80,80,0.9);text-transform:uppercase">B2B 제조업체</span>
+              </div>
+              <h4 style="font-size:15px;font-weight:700;margin-bottom:8px;color:var(--white)">WAF가 검색봇을 차단하며<br>"보안 설정에 의해 차단" 200 반환</h4>
+              <p style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-bottom:12px">방화벽이 크롤러를 막으면서 차단 페이지를 200으로 응답 → 포털 전체 에러 도배, 브랜드 이미지 실추.</p>
+              <div style="background:rgba(255,80,80,0.08);border-radius:8px;padding:10px 14px;font-size:12px;color:rgba(255,255,255,0.7)">
+                💸 보안업체 추가 설정비 <strong style="color:rgba(255,100,100,0.95)">500만 원</strong> 청구
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="issue-card" style="background:rgba(255,80,80,0.04);border:1px solid rgba(255,80,80,0.18);border-radius:12px;padding:24px">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+                <span style="font-size:22px">🛒</span>
+                <span style="font-size:11px;font-weight:700;letter-spacing:0.12em;color:rgba(255,80,80,0.9);text-transform:uppercase">자사몰·이커머스</span>
+              </div>
+              <h4 style="font-size:15px;font-weight:700;margin-bottom:8px;color:var(--white)">광고 UTM 파라미터로<br>상품 1개가 2,000개 중복 페이지</h4>
+              <p style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-bottom:12px">네이버 파워링크·인스타 광고 ?utm_source가 동일 상품 페이지를 수천 개로 분산 → 크롤링 예산 낭비, 월 광고 효율 급감.</p>
+              <div style="background:rgba(255,80,80,0.08);border-radius:8px;padding:10px 14px;font-size:12px;color:rgba(255,255,255,0.7)">
+                💸 월 광고비 <strong style="color:rgba(255,100,100,0.95)">500만 원</strong> 누수 + SEO 대행사 교정비 <strong style="color:rgba(255,100,100,0.95)">300만 원</strong>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="issue-card" style="background:rgba(255,80,80,0.04);border:1px solid rgba(255,80,80,0.18);border-radius:12px;padding:24px">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+                <span style="font-size:22px">🏪</span>
+                <span style="font-size:11px;font-weight:700;letter-spacing:0.12em;color:rgba(255,80,80,0.9);text-transform:uppercase">소상공인·중소기업</span>
+              </div>
+              <h4 style="font-size:15px;font-weight:700;margin-bottom:8px;color:var(--white)">구형 CMS에서 JSON-LD 주입 불가<br>→ 구조화 데이터 완전 누락</h4>
+              <p style="font-size:13px;color:var(--text-muted);line-height:1.6;margin-bottom:12px">임대형 빌더에서 헤더 수정이 막혀 구조화 데이터를 넣을 수 없음 → 구축비 400만 원 매몰, 독립몰 이전 견적 1,000만 원.</p>
+              <div style="background:rgba(255,80,80,0.08);border-radius:8px;padding:10px 14px;font-size:12px;color:rgba(255,255,255,0.7)">
+                💸 사이트 폐기 위기 · 이전 비용 <strong style="color:rgba(255,100,100,0.95)">1,000만 원</strong>
+              </div>
+            </div>
+
+          </div>
+          <div class="reveal" style="text-align:center">
+            <button class="btn-primary" onclick="goToSlide(11)" style="margin-right:12px">일반기업 요금제 보기 →</button>
+            <button class="btn-outline-cyan" onclick="goToSlide(8)">진단 신청 · 10만 원</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SLIDE 11: 일반기업 PRICING ── -->
+    <div class="slide">
+      <div class="slide-inner">
+        <div class="slide-content" style="max-width:900px;margin:0 auto;padding:40px 24px;text-align:center">
+          <div class="overline reveal">B2B / 이커머스 / 병원 · 클리닉</div>
+          <h2 class="reveal mb-2" style="font-size:clamp(22px,3.5vw,38px);line-height:1.2">일반기업 요금제</h2>
+          <p class="reveal mb-8" style="color:var(--text-muted);font-size:14px">검색 결함을 차단하고 브랜드 검색을 정상화하는 엣지 SEO 플랜</p>
+
+          <div class="grid-3 reveal" style="max-width:820px;margin:0 auto 28px">
+
+            <!-- Standard -->
+            <div class="price-card">
+              <div class="text-xxs font-bold mb-2" style="color:var(--text-muted);letter-spacing:0.15em">STANDARD PLAN</div>
+              <h3 class="mb-2" style="font-size:16px">브랜드 검색 정상화</h3>
+              <div class="price-num mb-1" style="color:#FF5050;font-size:36px;font-weight:800">25<span class="price-unit" style="font-size:14px;color:var(--text-muted)">만 원/월</span></div>
+              <div style="font-size:12px;color:#FF5050;font-weight:700;margin-bottom:16px">세팅비 <span style="font-size:15px">100</span>만 원</div>
+              <ul style="list-style:none;padding:0;margin:0 0 20px;text-align:left;font-size:12px;color:var(--text-muted);line-height:2">
+                <li>✔ Soft-404 자동 감지·보정</li>
+                <li>✔ 오리진 차단 503 정규화</li>
+                <li>✔ JSON-LD 구조화 데이터 주입</li>
+                <li>✔ 중복 URL 파라미터 정규화</li>
+                <li>✔ 월간 Search Console 리포트</li>
+              </ul>
+              <button class="btn-outline-cyan w-full mt-auto" style="font-size:11px;padding:8px" onclick="goToSlide(9)">신청하기</button>
+            </div>
+
+            <!-- Pro (featured) -->
+            <div class="price-card featured" style="border-color:var(--cyan);box-shadow:0 0 32px rgba(0,229,255,0.25)">
+              <div class="price-badge">🌟 RECOMMENDED</div>
+              <div class="text-xxs font-bold mb-2" style="color:var(--cyan);letter-spacing:0.15em">PRO PLAN</div>
+              <h3 class="mb-2" style="font-size:16px">AI 검색 인용 + 유입 방어</h3>
+              <div class="price-num mb-1" style="color:#FF5050;font-size:36px;font-weight:800">35<span class="price-unit" style="font-size:14px;color:var(--text-muted)">만 원/월</span></div>
+              <div style="font-size:12px;color:#FF5050;font-weight:700;margin-bottom:16px">세팅비 <span style="font-size:15px">100</span>만 원</div>
+              <ul style="list-style:none;padding:0;margin:0 0 20px;text-align:left;font-size:12px;color:var(--text-muted);line-height:2">
+                <li>✔ Standard 전체 포함</li>
+                <li>✔ AI 크롤러 대응 (GPTBot·ClaudeBot)</li>
+                <li>✔ /llms.txt 자동 생성·최신화</li>
+                <li>✔ 네이버 Yeti봇 크롤링 최적화</li>
+                <li>✔ 실시간 헬스체크 알림</li>
+                <li>✔ 분기별 기술 컨설팅 1회</li>
+              </ul>
+              <button class="btn-primary w-full mt-auto" style="font-size:11px;padding:8px" onclick="goToSlide(9)">신청하기</button>
+            </div>
+
+            <!-- Enterprise -->
+            <div class="price-card">
+              <div class="text-xxs font-bold mb-2" style="color:var(--text-muted);letter-spacing:0.15em">ENTERPRISE PLAN</div>
+              <h3 class="mb-2" style="font-size:16px">무중단 헬스 방어</h3>
+              <div class="price-num mb-1" style="color:#FF5050;font-size:36px;font-weight:800">40<span class="price-unit" style="font-size:14px;color:var(--text-muted)">만 원~/월</span></div>
+              <div style="font-size:12px;color:#FF5050;font-weight:700;margin-bottom:16px">세팅비 <span style="font-size:15px">100</span>만 원</div>
+              <ul style="list-style:none;padding:0;margin:0 0 20px;text-align:left;font-size:12px;color:var(--text-muted);line-height:2">
+                <li>✔ Pro 전체 포함</li>
+                <li>✔ 다중 도메인·서브도메인 지원</li>
+                <li>✔ WAF 봇 차단 자동 정규화</li>
+                <li>✔ 전담 슬랙 채널 지원</li>
+                <li>✔ SLA 99.9% 업타임 보장</li>
+                <li>✔ 맞춤 대시보드 제공</li>
+              </ul>
+              <button class="btn-outline-cyan w-full mt-auto" style="font-size:11px;padding:8px" onclick="goToSlide(9)">신청하기</button>
+            </div>
+
+          </div>
+
+          <div class="reveal" style="background:rgba(0,229,255,0.05);border:1px solid rgba(0,229,255,0.15);border-radius:10px;padding:14px 20px;font-size:12px;color:var(--text-muted);max-width:620px;margin:0 auto">
+            서버 비용은 저희 이익이 아닙니다. 실비 청구(마진 없음) · 서버 결제 계정을 고객사가 직접 소유·관리 가능
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div><!-- /slides-track -->
 </main>
 
@@ -1133,14 +1273,14 @@
   <div class="nav-row">
     <button class="arrow-btn" id="btn-prev" onclick="prevSlide()" aria-label="이전">&#8592;</button>
     <div class="dots" id="dots"></div>
-    <span class="slide-counter" id="counter">01 / 10</span>
+    <span class="slide-counter" id="counter">01 / 12</span>
     <button class="arrow-btn" id="btn-next" onclick="nextSlide()" aria-label="다음">&#8594;</button>
   </div>
 </div>
 
 <script>
 (function(){
-  var TOTAL = 10;
+  var TOTAL = 12;
   var current = 0;
   var track = document.getElementById('track');
   var dotsEl = document.getElementById('dots');
@@ -1164,14 +1304,14 @@
     if (n < 0) n = 0;
     if (n >= TOTAL) n = TOTAL - 1;
     current = n;
-    track.style.transform = 'translateX(-' + (n * 10) + '%)';
+    track.style.transform = 'translateX(-' + (n / TOTAL * 100).toFixed(4) + '%)';
 
     // Update dots
     var dots = dotsEl.querySelectorAll('.dot');
     dots.forEach(function(d, i){ d.classList.toggle('active', i === n); });
 
     // Update counter
-    var pad = n < 9 ? '0' : '';
+    var pad = n < 11 ? '0' : '';
     counterEl.textContent = pad + (n+1) + ' / ' + (TOTAL < 10 ? '0' : '') + TOTAL;
 
     // Update nav btn active state
