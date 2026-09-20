@@ -1686,7 +1686,7 @@
   <div class="nav-row">
     <button class="arrow-btn" id="btn-prev" onclick="prevSlide()" aria-label="이전">&#8592;</button>
     <div class="dots" id="dots"></div>
-    <span class="slide-counter" id="counter">01 / 20</span>
+    <span class="slide-counter" id="counter">01 / 11</span>
     <button class="arrow-btn" id="btn-next" onclick="nextSlide()" aria-label="다음">&#8594;</button>
   </div>
 </div>
@@ -1703,11 +1703,16 @@
   // Nav button → slide index map (matches Manus nav order: 실패원인=1, 엣지개입=2, 표면점검=3, 압도적차이=4, 공식증명=6, 도입비용=8)
   var navSlideMap = [1, 2, 3, 4, 6, 8];
 
-  // Build dots
+  // Build dots (section-aware: 0-10 = news, 11-19 = biz)
   for (var i = 0; i < TOTAL; i++) {
+    if (i === 11) {
+      var sep = document.createElement('span');
+      sep.style.cssText = 'display:inline-block;width:1px;height:10px;background:rgba(255,255,255,0.25);margin:0 6px;vertical-align:middle;';
+      dotsEl.appendChild(sep);
+    }
     var d = document.createElement('button');
     d.className = 'dot' + (i === 0 ? ' active' : '');
-    d.setAttribute('aria-label', (i+1) + '번 슬라이드');
+    d.setAttribute('aria-label', (i <= 10 ? '뉴스 ' + (i+1) : '기업 ' + (i-10)) + '번 슬라이드');
     d.dataset.idx = i;
     d.onclick = (function(n){ return function(){ goToSlide(n); }; })(i);
     dotsEl.appendChild(d);
@@ -1723,9 +1728,13 @@
     var dots = dotsEl.querySelectorAll('.dot');
     dots.forEach(function(d, i){ d.classList.toggle('active', i === n); });
 
-    // Update counter
-    var pad = n < 9 ? '0' : '';
-    counterEl.textContent = pad + (n+1) + ' / ' + (TOTAL < 10 ? '0' : '') + TOTAL;
+    // Update counter (section-aware)
+    var isNews = n <= 10;
+    var sIdx = isNews ? n : n - 11;
+    var sTotal = isNews ? 11 : 9;
+    var pad = (sIdx + 1) < 10 ? '0' : '';
+    var padT = sTotal < 10 ? '0' : '';
+    counterEl.textContent = pad + (sIdx + 1) + ' / ' + padT + sTotal;
 
     // Update nav btn active state
     navBtns.forEach(function(btn, i){
