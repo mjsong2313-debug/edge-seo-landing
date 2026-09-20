@@ -110,13 +110,13 @@
   }
   .slides-track{
     display:flex;height:100%;
-    width:1900%;
+    width:2000%;
     transform:translateX(0);
     transition:transform 0.6s cubic-bezier(0.4,0,0.2,1);
     will-change:transform;
   }
   .slide{
-    width:5.2632%;height:100%;flex-shrink:0;
+    width:5%;height:100%;flex-shrink:0;
   }
   .slide-inner{
     position:relative;height:100%;width:100%;
@@ -447,7 +447,7 @@
       <button class="nav-btn" onclick="goToSlide(8)">도입 비용</button>
     </nav>
     <div class="header-ctas">
-      <button class="btn-biz" onclick="goToSlide(10)">일반기업용 솔루션</button>
+      <button class="btn-biz" onclick="goToSlide(11)">일반기업용 솔루션</button>
       <button class="btn-diag" onclick="goToSlide(8)">진단 신청 · 10만 원</button>
     </div>
   </div>
@@ -494,7 +494,7 @@
             </div>
             <div class="cta-group mb-6">
               <button class="btn-primary" onclick="goToSlide(8)">내 사이트 진단 신청 · 10만 원</button>
-              <button class="btn-secondary" onclick="goToSlide(10)">일반기업용 솔루션 보기</button>
+              <button class="btn-secondary" onclick="goToSlide(11)">일반기업용 솔루션 보기</button>
               <button class="btn-outline-cyan" onclick="goToSlide(1)">실패 원인 해부하기</button>
             </div>
             <div class="status-bar">
@@ -1022,7 +1022,7 @@
               <div class="cms-finding" style="font-size:10px">Soft-404 및 503 방어</div>
               <div class="cms-finding" style="font-size:10px">뉴스 구조화 데이터</div>
             </div>
-            <button class="btn-outline-cyan w-full mt-6" style="font-size:11px;padding:8px" onclick="goToSlide(9)">신청하기</button>
+            <button class="btn-outline-cyan w-full mt-6" style="font-size:11px;padding:8px" onclick="goToSlide(10)">신청하기</button>
           </div>
           <div class="price-card featured">
             <div class="price-badge">🌟 RECOMMENDED</div>
@@ -1035,7 +1035,7 @@
               <div class="cms-finding" style="font-size:10px;color:var(--cyan)">AI 크롤러 카탈로그</div>
               <div class="cms-finding" style="font-size:10px;color:var(--cyan)">301 리디렉션 관리</div>
             </div>
-            <button class="btn-primary w-full mt-6" style="font-size:11px;padding:8px" onclick="goToSlide(9)">신청하기</button>
+            <button class="btn-primary w-full mt-6" style="font-size:11px;padding:8px" onclick="goToSlide(10)">신청하기</button>
           </div>
           <div class="price-card">
             <div class="text-xxs font-bold mb-2" style="color:var(--text-muted);letter-spacing:0.15em">ENTERPRISE PLAN</div>
@@ -1047,7 +1047,7 @@
               <div class="cms-finding" style="font-size:10px">503 방어 강화</div>
               <div class="cms-finding" style="font-size:10px">Fake-bot 차단</div>
             </div>
-            <button class="btn-outline-cyan w-full mt-6" style="font-size:11px;padding:8px" onclick="goToSlide(9)">신청하기</button>
+            <button class="btn-outline-cyan w-full mt-6" style="font-size:11px;padding:8px" onclick="goToSlide(10)">신청하기</button>
           </div>
         </div>
 
@@ -1101,11 +1101,76 @@
       </div>
     </div>
 
+    <!-- ══ SLIDE 9: NAVER DEDICATED ══ -->
+    <div class="slide">
+      <div class="slide-inner" style="display:flex;flex-direction:column;justify-content:center;min-height:100%">
+        <div style="max-width:860px;margin:0 auto;width:100%;padding:40px 24px">
+          <div class="slide-num">09 / 10 · NAVER × EDGE SEO</div>
+          <div class="overline reveal" style="color:var(--green)">뉴스 미등록 매체를 위한 네이버 전략</div>
+          <h2 class="reveal mb-4" style="font-size:clamp(24px,3.5vw,44px);line-height:1.2;font-weight:800">
+            네이버 뉴스 심사가 열릴 때까지<br>
+            <span style="color:var(--green)">손 놓고 계실 겁니까?</span>
+          </h2>
+          <p class="reveal muted mb-6" style="font-size:15px;max-width:640px;line-height:1.7">
+            제평위 동결 중에도, 엣지 SEO 엔진은 네이버 통합검색·AI 검색·서치어드바이저 점수를 동시에 끌어올립니다.
+          </p>
+
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-bottom:28px">
+            <!-- 카드 1: Yeti 봇 -->
+            <div class="reveal" style="background:rgba(0,255,135,0.06);border:1px solid rgba(0,255,135,0.22);border-radius:12px;padding:20px 16px">
+              <div style="font-size:22px;margin-bottom:10px">🤖</div>
+              <div style="font-size:10px;font-weight:700;letter-spacing:.12em;color:var(--green);margin-bottom:8px;text-transform:uppercase">Yeti 봇 크롤링 최적화</div>
+              <p style="font-size:12px;color:rgba(255,255,255,0.6);line-height:1.6">Soft-404·UTM 파라미터 제거로 Yeti가 신규 기사에만 크롤링 예산을 집중. 네이버 웹문서 수집 속도가 빨라집니다.</p>
+            </div>
+            <!-- 카드 2: 유사문서 -->
+            <div class="reveal" style="background:rgba(0,229,255,0.06);border:1px solid rgba(0,229,255,0.22);border-radius:12px;padding:20px 16px">
+              <div style="font-size:22px;margin-bottom:10px">🛡️</div>
+              <div style="font-size:10px;font-weight:700;letter-spacing:.12em;color:var(--cyan);margin-bottom:8px;text-transform:uppercase">유사문서 페널티 원천 방어</div>
+              <p style="font-size:12px;color:rgba(255,255,255,0.6);line-height:1.6">Canonical 태그를 정규 URL로 통일. 동일 기사가 UTM·페이지 번호로 중복 색인되는 구조를 엔진 레벨에서 차단합니다.</p>
+            </div>
+            <!-- 카드 3: 서치어드바이저 -->
+            <div class="reveal" style="background:rgba(0,255,135,0.06);border:1px solid rgba(0,255,135,0.22);border-radius:12px;padding:20px 16px">
+              <div style="font-size:22px;margin-bottom:10px">📊</div>
+              <div style="font-size:10px;font-weight:700;letter-spacing:.12em;color:var(--green);margin-bottom:8px;text-transform:uppercase">서치어드바이저 점수 개선</div>
+              <p style="font-size:12px;color:rgba(255,255,255,0.6);line-height:1.6">WAF 차단 오류·404 미정규화·메타 누락을 실시간으로 교정. 네이버 서치어드바이저 기술 점수가 직접 반영됩니다.</p>
+            </div>
+            <!-- 카드 4: 제평위 이력 -->
+            <div class="reveal" style="background:rgba(255,193,7,0.06);border:1px solid rgba(255,193,7,0.22);border-radius:12px;padding:20px 16px">
+              <div style="font-size:22px;margin-bottom:10px">🏆</div>
+              <div style="font-size:10px;font-weight:700;letter-spacing:.12em;color:#FFC107;margin-bottom:8px;text-transform:uppercase">제평위 심사 기술 이력 누적</div>
+              <p style="font-size:12px;color:rgba(255,255,255,0.6);line-height:1.6">404/503/WAF 교정 히스토리가 매일 쌓입니다. 제평위 심사 재개 시, 기술 항목 자동 만점 근거 자료가 됩니다.</p>
+            </div>
+            <!-- 카드 5: AI 검색 -->
+            <div class="reveal" style="background:rgba(0,229,255,0.06);border:1px solid rgba(0,229,255,0.22);border-radius:12px;padding:20px 16px">
+              <div style="font-size:22px;margin-bottom:10px">🧠</div>
+              <div style="font-size:10px;font-weight:700;letter-spacing:.12em;color:var(--cyan);margin-bottom:8px;text-transform:uppercase">AI 검색 우회로 개척</div>
+              <p style="font-size:12px;color:rgba(255,255,255,0.6);line-height:1.6">ChatGPT·Perplexity·Naver Cue — /llms.txt 카탈로그 자동 생성으로 AI 인용 출처로 등록됩니다. 뉴스 미등록이어도 AI에 인용됩니다.</p>
+            </div>
+            <!-- 카드 6: 통합검색 -->
+            <div class="reveal" style="background:rgba(0,255,135,0.06);border:1px solid rgba(0,255,135,0.22);border-radius:12px;padding:20px 16px">
+              <div style="font-size:22px;margin-bottom:10px">🔍</div>
+              <div style="font-size:10px;font-weight:700;letter-spacing:.12em;color:var(--green);margin-bottom:8px;text-transform:uppercase">네이버 통합검색 웹문서 장악</div>
+              <p style="font-size:12px;color:rgba(255,255,255,0.6);line-height:1.6">뉴스탭이 아닌 웹문서 영역에서 상단 노출. 네이버 뉴스 미등록이어도 키워드 검색 상단을 점유할 수 있습니다.</p>
+            </div>
+          </div>
+
+          <div style="background:linear-gradient(135deg,rgba(0,255,135,0.1),rgba(0,229,255,0.08));border:1px solid rgba(0,255,135,0.3);border-radius:10px;padding:16px 20px;margin-bottom:24px;font-size:13px;color:rgba(255,255,255,0.8);line-height:1.7">
+            <strong style="color:var(--green)">Googlebot = Yeti봇</strong> — 두 크롤러 모두 동일한 HTTP 표준을 따릅니다. 엣지 SEO 엔진의 구글 최적화 효과가 네이버에도 <strong style="color:var(--cyan)">동시에 적용</strong>됩니다.
+          </div>
+
+          <div class="cta-group">
+            <button class="btn-primary" onclick="goToSlide(10)">도입 문의 →</button>
+            <button class="btn-outline-cyan" onclick="goToSlide(8)">요금제 보기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- ══ SLIDE 10: FINAL COMMAND ══ -->
     <div class="slide">
       <div class="slide-inner" style="display:flex;flex-direction:column;justify-content:center;min-height:100%">
         <div style="max-width:720px;margin:0 auto;width:100%">
-          <div class="slide-num">10 / 10 · FINAL COMMAND</div>
+          <div class="slide-num">10 / 10 · CONTACT</div>
           <div class="badge mb-6"><span class="badge-dot"></span>진단 접수 중</div>
           <h2 class="mb-4">
             검색 신호가 흔들린다면,<br>
@@ -1185,8 +1250,8 @@
             <span style="background:rgba(0,229,255,0.1);border:1px solid rgba(0,229,255,0.3);border-radius:20px;padding:6px 14px;font-size:12px;color:var(--cyan);font-weight:600">쇼핑몰 · 병원 · B2B · 일반기업</span>
           </div>
           <div class="reveal" style="display:flex;gap:12px;flex-wrap:wrap">
-            <button class="btn-primary" onclick="goToSlide(11)">우리 회사 문제 보기 →</button>
-            <button class="btn-outline-cyan" onclick="goToSlide(17)">요금제 바로 보기</button>
+            <button class="btn-primary" onclick="goToSlide(12)">우리 회사 문제 보기 →</button>
+            <button class="btn-outline-cyan" onclick="goToSlide(19)">요금제 바로 보기</button>
           </div>
         </div>
       </div>
@@ -1221,8 +1286,8 @@
           </div>
 
           <div class="reveal" style="text-align:center">
-            <button class="btn-primary" onclick="goToSlide(12)" style="margin-right:12px">실제 결함 사례 보기 →</button>
-            <button class="btn-outline-cyan" onclick="goToSlide(17)">요금제 바로 보기</button>
+            <button class="btn-primary" onclick="goToSlide(13)" style="margin-right:12px">실제 결함 사례 보기 →</button>
+            <button class="btn-outline-cyan" onclick="goToSlide(19)">요금제 바로 보기</button>
           </div>
         </div>
       </div>
@@ -1291,7 +1356,7 @@
 
           </div>
           <div class="reveal" style="text-align:center">
-            <button class="btn-primary" onclick="goToSlide(13)" style="margin-right:12px">해결 방법 보기 →</button>
+            <button class="btn-primary" onclick="goToSlide(14)" style="margin-right:12px">해결 방법 보기 →</button>
             <button class="btn-outline-cyan" onclick="goToSlide(8)">진단 신청 · 10만 원</button>
           </div>
         </div>
@@ -1339,7 +1404,7 @@
           </div>
 
           <div class="reveal" style="text-align:center">
-            <button class="btn-primary" onclick="goToSlide(14)" style="margin-right:12px">도입 리스크 확인하기 →</button>
+            <button class="btn-primary" onclick="goToSlide(15)" style="margin-right:12px">도입 리스크 확인하기 →</button>
             <button class="btn-outline-cyan" onclick="goToSlide(8)">진단 신청 · 10만 원</button>
           </div>
         </div>
@@ -1382,7 +1447,7 @@
           </div>
 
           <div class="reveal" style="text-align:center">
-            <button class="btn-primary" onclick="goToSlide(15)" style="margin-right:12px">도입 결정 기준 보기 →</button>
+            <button class="btn-primary" onclick="goToSlide(16)" style="margin-right:12px">도입 결정 기준 보기 →</button>
             <button class="btn-outline-cyan" onclick="goToSlide(8)">진단 신청 · 10만 원</button>
           </div>
         </div>
@@ -1419,8 +1484,8 @@
 
           <div class="reveal" style="display:flex;gap:12px;flex-wrap:wrap">
             <button class="btn-primary" onclick="goToSlide(8)">진단 신청 · 10만 원 →</button>
-            <button class="btn-outline-cyan" onclick="goToSlide(17)">요금제 보기</button>
-            <button class="btn-secondary" onclick="goToSlide(16)" style="font-size:13px">네이버 동시 최적화 보기</button>
+            <button class="btn-outline-cyan" onclick="goToSlide(19)">요금제 보기</button>
+            <button class="btn-secondary" onclick="goToSlide(17)" style="font-size:13px">네이버 동시 최적화 보기</button>
           </div>
         </div>
       </div>
@@ -1489,7 +1554,7 @@
             </div>
           </div>
           <div class="reveal" style="text-align:center">
-            <button class="btn-primary" onclick="goToSlide(12)" style="margin-right:12px">실제 결함 사례 보기 →</button>
+            <button class="btn-primary" onclick="goToSlide(13)" style="margin-right:12px">실제 결함 사례 보기 →</button>
             <button class="btn-outline-cyan" onclick="goToSlide(8)">진단 신청 · 10만 원</button>
           </div>
         </div>
@@ -1536,7 +1601,7 @@
             <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.6">네이버 뉴스 심사가 재개될 때까지 기다리는 동안, Edge SEO가 기술 이력을 자동으로 누적합니다. 준비가 안 된 경쟁사와는 다른 출발선에 서게 됩니다.</p>
           </div>
           <div class="reveal" style="text-align:center">
-            <button class="btn-primary" onclick="goToSlide(18)" style="margin-right:12px">요금제 보기 →</button>
+            <button class="btn-primary" onclick="goToSlide(19)" style="margin-right:12px">요금제 보기 →</button>
             <button class="btn-outline-cyan" onclick="goToSlide(8)">진단 신청 · 10만 원</button>
           </div>
         </div>
@@ -1621,14 +1686,14 @@
   <div class="nav-row">
     <button class="arrow-btn" id="btn-prev" onclick="prevSlide()" aria-label="이전">&#8592;</button>
     <div class="dots" id="dots"></div>
-    <span class="slide-counter" id="counter">01 / 19</span>
+    <span class="slide-counter" id="counter">01 / 20</span>
     <button class="arrow-btn" id="btn-next" onclick="nextSlide()" aria-label="다음">&#8594;</button>
   </div>
 </div>
 
 <script>
 (function(){
-  var TOTAL = 19;
+  var TOTAL = 20;
   var current = 0;
   var track = document.getElementById('track');
   var dotsEl = document.getElementById('dots');
@@ -1659,7 +1724,7 @@
     dots.forEach(function(d, i){ d.classList.toggle('active', i === n); });
 
     // Update counter
-    var pad = n < 18 ? '0' : '';
+    var pad = n < 9 ? '0' : '';
     counterEl.textContent = pad + (n+1) + ' / ' + (TOTAL < 10 ? '0' : '') + TOTAL;
 
     // Update nav btn active state
